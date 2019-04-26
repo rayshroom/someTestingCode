@@ -83,3 +83,17 @@ focus_sentence = "Apple Inc., a company that became a trillion-dollar behemoth o
 for sentence in sentences:
     print("Similarity(\"%s\", \"%s\") = %s" % (focus_sentence, sentence, symmetric_sentence_similarity(focus_sentence, sentence)))
     #print("Similarity(\"%s\", \"%s\") = %s" % (sentence, focus_sentence, symmetric_sentence_similarity(sentence, focus_sentence)))
+
+
+'''
+
+Similarity("Apple Inc., a company that became a trillion-dollar behemoth on the popularity of its sleek and high-priced devices, is banking its future on subscription services.", "Apple Inc., now a trillion-dollar behemoth on the popularity of its high-priced devices, is banking its future on subscription services.") = 1.0
+Similarity("Apple Inc., a company that became a trillion-dollar behemoth on the popularity of its sleek and high-priced devices, is banking its future on subscription services.", "Apple Inc., is banking its future on subscription services.") = 1.0
+Similarity("Apple Inc., a company that became a trillion-dollar behemoth on the popularity of its sleek and high-priced devices, is banking its future on subscription services.", "Google Inc., is banking its future on subscription services.") = 0.669017094017094
+Similarity("Apple Inc., a company that became a trillion-dollar behemoth on the popularity of its sleek and high-priced devices, is banking its future on subscription services.", "Apple Inc. is all-in on monthly subscription services.") = 1.0
+Similarity("Apple Inc., a company that became a trillion-dollar behemoth on the popularity of its sleek and high-priced devices, is banking its future on subscription services.", "Google Inc. has put its future on subscription services.") = 0.5066239316239316
+Similarity("Apple Inc., a company that became a trillion-dollar behemoth on the popularity of its sleek and high-priced devices, is banking its future on subscription services.", "Apple Inc., now a trillion-dollar behemoth on the popularity of its high-priced devices") = 1.0
+
+Similarity("Apple Inc., is banking its future on subscription services.", "Google Inc., is banking its future on subscription services.") = 0.8466880341880342
+
+'''
